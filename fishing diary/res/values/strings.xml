@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fishing Diary</string>
+    <string name="capturas">Menú Capturas</string>
+    <string name="info">Info</string>
+    <string name="app_menu">Menú Activity</string>
+    <string name="no_data">No Se han encontrado capturas.</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_sql">Fishing Diary</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_edit">Edit</string>
+    <string name="add_new">Add new</string>
+    <string name="anadir">Añadir</string>
+    <string name="enable">Enable</string>
+    <string name="map">Ver mapa</string>
+    <string name="c_longitud">Longitud</string>
+    <string name="c_latitud">Latitud</string>
+    <string name="tipo_pez">Especie Pez</string>
+    <string name="comentario">Comentario</string>
+    <string name="lugar">Localización</string>
+    <string name="cebo">Cebo Usado</string>
+    <string name="peso">Peso</string>
+    <string name="longitud">Longitud</string>
+    <string name="imagen">Selecciona Imagen</string>
+    <string name="subir_imagen">Subir Imagen</string>
+    <string name="galeriafoto_string">Galería</string>
+    <string name="coordenadas_string">Calcular Coordenadas</string>
+    <string name="coordenadas_fin_string">Finalizar Cálculo</string>
+    <string name="nuevafoto_string">Nueva</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_map">Mapa Captura</string>
+
+</resources>

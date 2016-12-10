@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_add"
+        android:title="@string/add_new"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/btn_plus"
+        android:showAsAction="ifRoom" />  
+        
+	<item android:id="@+id/menu_search"
+	    android:title="@android:string/search_go"
+    	android:showAsAction="ifRoom|collapseActionView"
+    	android:actionViewClass="android.widget.SearchView"
+    	android:icon="@android:drawable/ic_menu_search" /> 
+    	
+	<item android:id="@+id/menu_anadir"
+        android:title="@string/anadir"
+        android:icon="@android:drawable/ic_menu_add"
+        android:textColor="#00FF00"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+    	
+	<item android:id="@+id/menu_enable"
+        android:title="@string/enable"
+        android:textColor="#00FF00"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+	
+</menu>

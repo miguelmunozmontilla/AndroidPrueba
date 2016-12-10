@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/scroll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+       android:background="#3f51b5" >
+
+<LinearLayout 
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#3f51b5"  >
+    
+    <TextView
+        android:id="@+id/lbl_your_name"
+        android:text="@string/tipo_pez" 
+        android:textColor="#eceff1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+      
+    <EditText
+        android:id="@+id/txt_your_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="text"
+        android:background="#e3f2fd"
+        android:imeOptions="actionDone" 
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8"/>
+    
+    <TextView
+        android:id="@+id/lbl_your_comentario"
+        android:text="@string/comentario" 
+        android:textColor="#eceff1"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+      
+    <EditText
+        android:id="@+id/txt_your_comentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="text"
+        android:background="#e3f2fd"
+        android:imeOptions="actionDone" 
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8" />
+    
+     <TextView
+        android:id="@+id/lbl_your_place"
+        android:text="@string/lugar"  
+        android:textColor="#eceff1"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+     
+     <EditText
+        android:id="@+id/txt_your_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="text"
+        android:background="#e3f2fd"
+        android:imeOptions="actionDone" 
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8" />
+     
+     <TextView
+        android:id="@+id/lbl_cebo"
+        android:text="@string/cebo"  
+        android:textColor="#eceff1"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+     
+     <EditText
+        android:id="@+id/txt_cebo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:inputType="text"
+        android:background="#e3f2fd"
+        android:imeOptions="actionDone" 
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.8" />
+     
+     <LinearLayout 
+    	android:id="@+id/caracteristicas"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+    	android:orientation="horizontal"  >
+    	
+        <TextView
+        	android:id="@+id/lbl_peso"
+        	android:text="@string/peso" 
+        	android:textColor="#eceff1" 
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content" /> 
+         
+        <EditText
+        	android:id="@+id/txt_peso"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content" 
+        	android:inputType="numberDecimal"
+        	android:background="#e3f2fd"
+        	android:layout_marginRight="20dp"
+        	android:imeOptions="actionDone" />    
+        	
+        <TextView
+        	android:id="@+id/lbl_longitud"
+        	android:text="@string/longitud" 
+        	android:textColor="#eceff1" 
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content" /> 
+         
+        <EditText
+        	android:id="@+id/txt_longitud"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content" 
+        	android:inputType="numberDecimal"
+        	android:background="#e3f2fd"
+        	android:imeOptions="actionDone" />
+     	
+     </LinearLayout>
+     
+     <Button
+            android:id="@+id/gps_calcular"
+    	 	android:layout_height="wrap_content"
+     		android:layout_width="match_parent"
+     		android:text="@string/coordenadas_string"
+     		android:layout_marginTop="20dp"
+        	android:textColor="#eceff1" />
+     
+     <LinearLayout 
+    	android:id="@+id/coordenadas_Layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:orientation="vertical" 
+    	android:visibility="gone"
+    	 >
+    	
+     <LinearLayout 
+    	android:id="@+id/Longitud_gps"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+    	android:orientation="horizontal"  >
+    	
+        <TextView
+        	android:id="@+id/lbl_c_long"
+        	android:text="@string/c_longitud" 
+        	android:textColor="#eceff1" 
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content" /> 
+         
+        <EditText
+        	android:id="@+id/txt_c_long"
+        	android:layout_width="0dp"
+        	android:layout_weight="2"
+        	android:layout_height="wrap_content" 
+        	android:inputType="numberDecimal"
+        	android:background="#e3f2fd"
+        	android:layout_marginRight="20dp"
+        	android:imeOptions="actionDone"
+        	android:clickable="false" 
+        	android:cursorVisible="false" 
+        	android:focusable="false" 
+        	android:focusableInTouchMode="false" /> 
+
+       </LinearLayout> 
+       
+     <LinearLayout 
+    	android:id="@+id/Latitud_gps"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+    	android:orientation="horizontal"  >
+    	
+        <TextView
+        	android:id="@+id/lbl_c_lat"
+        	android:text="@string/c_latitud" 
+        	android:textColor="#eceff1" 
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content" /> 
+         
+        <EditText
+        	android:id="@+id/txt_c_lat"
+        	android:layout_width="0dp"
+        	android:layout_weight="2"
+        	android:layout_height="wrap_content" 
+        	android:inputType="numberDecimal"
+        	android:background="#e3f2fd"
+        	android:layout_marginRight="20dp"
+        	android:imeOptions="actionDone" 
+        	android:clickable="false" 
+        	android:cursorVisible="false" 
+        	android:focusable="false" 
+        	android:focusableInTouchMode="false"/> 
+
+       </LinearLayout>
+       
+     <Button
+            android:id="@+id/gps_finalizar"
+    	 	android:layout_height="wrap_content"
+     		android:layout_width="match_parent"
+     		android:text="@string/coordenadas_fin_string"
+     		android:layout_marginTop="20dp"
+        	android:textColor="#eceff1" />
+     
+      <Button
+            android:id="@+id/botonMapa"
+    	 	android:layout_height="wrap_content"
+     		android:layout_width="match_parent"
+     		android:text="@string/map"
+     		android:visibility="gone"
+     		android:layout_marginTop="20dp"
+        	android:textColor="#eceff1" />
+       
+    </LinearLayout>
+     
+     <TextView
+         android:id="@+id/lbl_your_imagen"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:text="@string/imagen" 
+         android:textColor="#eceff1" />
+     
+     <LinearLayout 
+    	android:id="@+id/botones_foto"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:orientation="horizontal"
+    	android:layout_marginTop="20dp"     	
+     	android:background="?android:attr/selectableItemBackground" >
+        
+         <Button
+            android:id="@+id/galeria_foto"
+    	 	android:layout_height="wrap_content"
+     		android:layout_width="0dp"
+     		android:layout_weight="1"
+     		android:layout_marginRight="50dp"
+     		android:text="@string/galeriafoto_string"
+     		android:onClick="GaleriaFoto"
+        	android:textColor="#eceff1"
+     		 />
+         
+         <Button
+            android:id="@+id/nueva_foto"
+     		android:layout_height="wrap_content"
+     		android:layout_width="0dp"
+     		android:layout_weight="1"
+     		android:text="@string/nuevafoto_string"
+       		android:textColor="#eceff1" />
+      
+     </LinearLayout>
+     
+    
+    <ImageView
+        	android:id="@+id/imagen_fila"
+        	android:layout_width="wrap_content"
+        	android:layout_height="0dp"
+        	android:adjustViewBounds="true"
+        	android:layout_weight="1.0"
+        	android:layout_gravity="center"
+        	android:contentDescription="@string/subir_imagen"      	
+			android:layout_marginTop="20dp" />
+   
+    
+    
+    <!-- Por si añadimos botón
+    	<Button
+        android:id="@+id/aceptarbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="aceptar"
+        android:text="Aceptar" /> -->
+    
+</LinearLayout>
+</ScrollView>
