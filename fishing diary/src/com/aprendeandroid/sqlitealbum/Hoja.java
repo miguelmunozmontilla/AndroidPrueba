@@ -2,6 +2,8 @@ package com.aprendeandroid.sqlitealbum;
 
 import android.database.Cursor;
 
+/*Comentario genérico*/
+
 public class Hoja {
 
 	private long id;
